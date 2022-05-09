@@ -1,2 +1,2 @@
-import NativeTurboStarter from './NativeTurboStarter';
-export default NativeTurboStarter;
+import NativeTurboZipArchive from './NativeTurboZipArchive';
+export default NativeTurboZipArchive;

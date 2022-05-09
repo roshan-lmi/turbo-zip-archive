@@ -1,5 +1,5 @@
 {
-  "name": "react-native-turbo-starter",
+  "name": "turbo-zip-archive",
   "version": "0.1.0",
   "description": "React 0.68+ Turbo Module example with codegen with typescript for Objective-C and Java/Kotlin with C++ shared library",
   "main": "lib/commonjs/index",
@@ -13,7 +13,7 @@
     "android",
     "ios",
     "cpp",
-    "react-native-turbo-starter.podspec",
+    "turbo-zip-archive.podspec",
     "!lib/typescript/example",
     "!android/build",
     "!ios/build",
@@ -36,13 +36,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/talknagish/react-native-turbo-starter",
-  "author": "Nagish <hello@talknagish.com> (https://talknagish.com)",
+  "repository": "https://github.com/roshangm1/turbo-zip-archive",
+  "author": "Roshan Gautam <roshan@brainants.com> (https://roshan.info.np)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/talknagish/react-native-turbo-starter/issues"
+    "url": "https://github.com/roshangm1/turbo-zip-archive/issues"
   },
-  "homepage": "https://github.com/talknagish/react-native-turbo-starter#readme",
+  "homepage": "https://github.com/roshangm1/turbo-zip-archive#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -147,7 +147,7 @@
   "codegenConfig": {
     "libraries": [
       {
-        "name": "TurboStarter",
+        "name": "TurboZipArchive",
         "type": "modules",
         "jsSrcsDir": "./src"
       }

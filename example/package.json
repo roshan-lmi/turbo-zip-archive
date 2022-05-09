@@ -1,6 +1,6 @@
 {
-  "name": "react-native-turbo-starter-example",
-  "description": "Example app for react-native-turbo-starter",
+  "name": "turbo-zip-archive-example",
+  "description": "Example app for turbo-zip-archive",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -13,7 +13,9 @@
   "dependencies": {
     "react": "17.0.2",
     "react-native": "0.68.1",
-    "react-native-turbo-starter": "link:../"
+    "react-native-zip-archive": "^6.0.8",
+    "rn-fetch-blob": "^0.12.0",
+    "turbo-zip-archive": "link:../"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
