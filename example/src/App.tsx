@@ -7,12 +7,9 @@ const App = () => {
   const dirs = RNFetchBlob.fs.dirs;
   const fromPath = dirs.DocumentDir + '/artifacts.zip';
 
-  const unzipNowTurbo = () => {};
-
   return (
     <SafeAreaView>
       <Text>{ZipArchive.getGreeting('Roshan')}</Text>
-      <Button title="Unzip Turbo" onPress={unzipNowTurbo} />
     </SafeAreaView>
   );
 };
