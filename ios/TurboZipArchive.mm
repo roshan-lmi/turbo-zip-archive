@@ -8,7 +8,6 @@
 
 @implementation TurboZipArchive
 {
-    bool hasListeners;
 }
 
 - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:(const facebook::react::ObjCTurboModule::InitParams &)params
@@ -20,17 +19,6 @@
     return @"TurboZipArchive";
 }
 
-// Will be called when this module's first listener is added.
--(void)startObserving {
-    hasListeners = YES;
-    // Set up any upstream listeners or background tasks as necessary
-}
-
-// Will be called when this module's last listener is removed, or on dealloc.
--(void)stopObserving {
-    hasListeners = NO;
-    // Remove upstream listeners, stop unnecessary background tasks
-}
 
 - (NSArray<NSString *> *)supportedEvents
 {
@@ -42,16 +30,12 @@
 }
 
 - (NSDictionary *)unzip:(NSString *)from destinationPath:(NSString *)destinationPath charset:(NSString *)charset {
-    //    self.progress = 0.0;
-    //       self.processedFilePath = @"";
-    //       [self zipArchiveProgressEvent:0 total:1]; // force 0%
+
 
            NSError *error = nil;
 
            BOOL success = [SSZipArchive unzipFileAtPath:from toDestination:destinationPath preserveAttributes:NO overwrite:YES password:nil error:&error delegate:nil];
 
-    //       self.progress = 1.0;
-    //       [self zipArchiveProgressEvent:1 total:1]; // force 100%
 
            if (success) {
                return @{
