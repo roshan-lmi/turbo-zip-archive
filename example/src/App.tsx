@@ -10,6 +10,10 @@ const App = () => {
   return (
     <SafeAreaView>
       <Text>{ZipArchive.getGreeting('Roshan')}</Text>
+      <Button
+        title="Unzip"
+        onPress={() => ZipArchive.unzip(fromPath, dirs.DocumentDir, 'UTF-8')}
+      />
     </SafeAreaView>
   );
 };

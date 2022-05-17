@@ -29,6 +29,25 @@
     return [NSString stringWithFormat: @"Hello, %@!", name];
 }
 
+- (NSDictionary *)unzip:(NSString *)from destinationPath:(NSString *)destinationPath charset:(NSString *)charset {
+
+
+     NSError *error = nil;
+
+     BOOL success = [SSZipArchive unzipFileAtPath:from toDestination:destinationPath preserveAttributes:NO overwrite:YES password:nil error:&error delegate:nil];
+    
+    if(success){
+        return @{
+            @"path": destinationPath
+        };
+    }
+    
+    return @{
+        @"error": [error localizedDescription]
+    };
+}
+
+
 
 @end
 
